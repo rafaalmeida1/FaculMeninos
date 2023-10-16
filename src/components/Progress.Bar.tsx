@@ -20,9 +20,9 @@ export function ProgressBar({ progress = 0 }: Props) {
   }, [progress])
 
   return (
-    <View className="max-w-full h-2 rounded-xl flex flex-row bg-zinc-700">
+    <View className="max-w-full w-[100px] h-2 rounded-xl flex flex-row bg-zinc-300">
       <Animated.View 
-        className="h-2 rounded-xl bg-[#a82754]"
+        className="h-2 rounded-xl bg-[#DF3222]"
         style={style}
       />
     </View>

@@ -9,6 +9,8 @@ import { ProgressBar } from "../components/Progress.Bar";
 import { Feather } from "@expo/vector-icons";
 import colors from "tailwindcss/colors";
 import { FriendsSection } from "../components/screens/Home/FriendSection";
+import { Emblem } from "../components/screens/Home/Emblem";
+import { RecyclingGraph } from "../components/screens/Home/RecyclingGraph";
 
 export function Home() {
     const [loading, setLoading] = useState(false);
@@ -59,9 +61,11 @@ export function Home() {
             <ScrollView
                 showsVerticalScrollIndicator={false}
                 contentContainerStyle={{ paddingBottom: 100, paddingLeft: 0 }} 
-                className="w-full mt-4"
+                className="w-full mt-4 flex flex-col"
             >
                 <FriendsSection />
+                <Emblem />
+                <RecyclingGraph />
             </ScrollView>
         </View>
     );
